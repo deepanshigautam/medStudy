@@ -1,7 +1,7 @@
 # MedStudy
 
 ## Overview
-MedStudy is a responsive landing page designed for students looking to pursue MBBS abroad. The page provides information about studying MBBS in various countries, the admission process, benefits, and a lead generation form. It is built using **HTML, Tailwind CSS, and JavaScript**, ensuring a clean and optimized user experience.
+MedStudy is a  website designed for students looking to pursue MBBS abroad. The page provides information about studying MBBS in various countries, the admission process, benefits, and a lead generation form. It is built using **HTML, Tailwind CSS, and JavaScript**, ensuring a clean and optimized user experience.
 
 ## Features
 - **Responsive Design:** Fully optimized for desktops, tablets, and mobile devices.
