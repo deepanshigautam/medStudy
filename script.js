@@ -178,3 +178,46 @@ loadSection("features", "features.html");
 loadSection("countries", "countries.html");
 loadSection("apply", "apply.html");
 loadSection("footer", "footer.html");
+
+
+
+// Scroll Progress Indicator
+const createScrollProgress = () => {
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    document.body.appendChild(progressBar);
+
+    window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        progressBar.style.width = `${scrolled}%`;
+    });
+};
+
+
+
+// Smooth Scroll with Progress
+const initSmoothScroll = () => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const targetPosition = targetElement.offsetTop - 80; // Adjust for header
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+};
+
+// Initialize all scroll animations
+document.addEventListener('DOMContentLoaded', () => {
+    createScrollProgress();
+    initSmoothScroll();
+});

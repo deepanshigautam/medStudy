@@ -4,8 +4,11 @@
 }
   /* Custom Hover Effect */
   .nav-link {
-    position: relative;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
 }
 .nav-link::after {
     content: "";
@@ -170,4 +173,15 @@
     .hero-content {
         padding: 2rem 1rem;
     }
+}
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #87ab69;
+    z-index: 1000;
+    transition: width 0.1s ease-out;
 }
