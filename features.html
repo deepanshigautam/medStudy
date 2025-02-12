@@ -1,44 +1,97 @@
-<section class="features py-16 bg-white relative overflow-hidden">
-    <div class="floating-bg"></div>
-    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
-        <div class="text-center mb-12 fade-in">
-            <h2 class="text-3xl md:text-4xl font-bold text-[#4A5D3F] mb-4">Why Choose MedStudy?</h2>
-            <p class="text-[#658354] max-w-2xl mx-auto">Discover the advantages of pursuing your medical education through our program.</p>
+<section class="features py-24 relative overflow-hidden">
+    <!-- Modern animated background -->
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZTVlN2ViIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
+    
+    <!-- Animated blur circles -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#87ab69]/20 rounded-full filter blur-3xl animate-blob"></div>
+    <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-[#4A5D3F]/20 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Modern header with gradient text -->
+        <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#4A5D3F] to-[#87ab69] inline-block text-transparent bg-clip-text">Why Study MBBS Abroad?</h1>
+            <p class="text-[#658354] text-lg max-w-2xl mx-auto">Explore the outstanding advantages of pursuing your medical degree internationally.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Feature Card 1 -->
-            <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <div class="w-12 h-12 bg-[#87ab69]/20 rounded-full flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-[#4A5D3F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                    </svg>
+            <div class="group" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative p-8 rounded-2xl bg-white/60 backdrop-blur-lg border border-white/20 shadow-xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#87ab69]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-[#87ab69]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <svg class="w-8 h-8 text-[#4A5D3F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-[#4A5D3F] mb-4">International Standards</h3>
+                        <p class="text-[#658354] leading-relaxed">Experience medical education that meets global standards with exposure to diverse healthcare systems and advanced medical practices.</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-semibold text-[#4A5D3F] mb-2">World-Class Education</h3>
-                <p class="text-[#658354]">Access to top-ranked medical universities with state-of-the-art facilities and experienced faculty.</p>
             </div>
 
             <!-- Feature Card 2 -->
-            <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <div class="w-12 h-12 bg-[#87ab69]/20 rounded-full flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-[#4A5D3F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
-                    </svg>
+            <div class="group" data-aos="fade-up" data-aos-delay="200">
+                <div class="relative p-8 rounded-2xl bg-white/60 backdrop-blur-lg border border-white/20 shadow-xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#87ab69]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-[#87ab69]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <svg class="w-8 h-8 text-[#4A5D3F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-[#4A5D3F] mb-4">Cultural Immersion</h3>
+                        <p class="text-[#658354] leading-relaxed">Gain valuable cross-cultural experience while developing global perspectives in healthcare and building an international network.</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-semibold text-[#4A5D3F] mb-2">Global Recognition</h3>
-                <p class="text-[#658354]">Degrees recognized worldwide, opening doors to international career opportunities.</p>
             </div>
 
             <!-- Feature Card 3 -->
-            <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <div class="w-12 h-12 bg-[#87ab69]/20 rounded-full flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-[#4A5D3F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
+            <div class="group" data-aos="fade-up" data-aos-delay="300">
+                <div class="relative p-8 rounded-2xl bg-white/60 backdrop-blur-lg border border-white/20 shadow-xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#87ab69]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-[#87ab69]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                            <svg class="w-8 h-8 text-[#4A5D3F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-[#4A5D3F] mb-4">Cost-Effective</h3>
+                        <p class="text-[#658354] leading-relaxed">Benefit from lower tuition fees compared to many domestic programs, while receiving quality education and clinical training.</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-semibold text-[#4A5D3F] mb-2">Affordable Education</h3>
-                <p class="text-[#658354]">Competitive tuition fees with various scholarship opportunities and financial aid options.</p>
             </div>
         </div>
     </div>
 </section>
+<style>
+    @keyframes blob {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.9); }
+        100% { transform: translate(0px, 0px) scale(1); }
+    }
+    
+    .animate-blob {
+        animation: blob 7s infinite;
+    }
+    
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+    
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false,
+            offset: 100
+        });
+    });
+</script>
