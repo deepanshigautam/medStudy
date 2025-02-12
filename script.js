@@ -146,10 +146,10 @@
   window.addEventListener('load', () => {
       // Preload important images
       const imagesToPreload = [
-          '/task/1.jpg',
-          '/task/8.jpg',
-          '/task/9.jpg',
-          '/task/11.jpg'
+          '/assets/img1.jpg',
+          '/assets/img2.jpg',
+          '/assets/img3.jpg',
+          '/assets/img4.jpg'
       ];
       
       imagesToPreload.forEach(imageSrc => {
@@ -175,5 +175,6 @@ function loadSection(sectionId, filePath) {
 
 loadSection("hero", "hero.html");
 loadSection("features", "features.html");
+loadSection("countries", "countries.html");
 loadSection("cta", "cta.html");
 loadSection("footer", "footer.html");
