@@ -176,5 +176,5 @@ function loadSection(sectionId, filePath) {
 loadSection("hero", "hero.html");
 loadSection("features", "features.html");
 loadSection("countries", "countries.html");
-loadSection("cta", "cta.html");
+loadSection("apply", "apply.html");
 loadSection("footer", "footer.html");
