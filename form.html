@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Lead Capture Form</title>
+    <style>
+        .custom-bg-gradient {
+            background: linear-gradient(135deg, #4b6043, #658354);
+        }
+        .form-container {
+            transform: translateY(0);
+            opacity: 1;
+            animation: slideIn 0.6s ease-out;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .input-field {
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(117, 151, 94, 0.3);
+        }
+        .submit-button {
+            transition: all 0.3s ease;
+        }
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(75, 96, 67, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4" style="background-color: #ddead1;">
+    <div class="max-w-md w-full bg-white rounded-lg shadow-lg p-8 form-container">
+        <h2 class="text-2xl font-bold mb-6 text-center" style="color: #4b6043;">Get Started Today</h2>
+        <form class="space-y-6">
+            <div>
+                <label for="name" class="block text-sm font-medium mb-1" style="color: #658354;">Full Name</label>
+                <input type="text" id="name" name="name" required
+                    class="input-field w-full px-4 py-2 border rounded-md focus:border-[#75975e] focus:ring-2 focus:ring-[#75975e]"
+                    style="border-color: #b3cf99;"
+                    placeholder="John Doe">
+            </div>
+            
+            <div>
+                <label for="email" class="block text-sm font-medium mb-1" style="color: #658354;">Email Address</label>
+                <input type="email" id="email" name="email" required
+                    class="input-field w-full px-4 py-2 border rounded-md focus:border-[#75975e] focus:ring-2 focus:ring-[#75975e]"
+                    style="border-color: #b3cf99;"
+                    placeholder="john@example.com">
+            </div>
+            
+            <div>
+                <label for="phone" class="block text-sm font-medium mb-1" style="color: #658354;">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required
+                    class="input-field w-full px-4 py-2 border rounded-md focus:border-[#75975e] focus:ring-2 focus:ring-[#75975e]"
+                    style="border-color: #b3cf99;"
+                    placeholder="+1 (555) 000-0000">
+            </div>
+            
+            <div>
+                <label for="country" class="block text-sm font-medium mb-1" style="color: #658354;">Preferred Country</label>
+                <select id="country" name="country" required
+                    class="input-field w-full px-4 py-2 border rounded-md focus:border-[#75975e] focus:ring-2 focus:ring-[#75975e]"
+                    style="border-color: #b3cf99;">
+                    <option value="" disabled selected>Select a country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <button type="submit"
+                class="submit-button w-full text-white py-2 px-4 rounded-md custom-bg-gradient"
+                style="background-color: #75975e;">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
